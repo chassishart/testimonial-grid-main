@@ -39,10 +39,6 @@ img {
   border-radius: 100%;
 }
 
-.name {
-  padding-top: 5px;
-}
-
 h3 {
   padding: 15px 0px;
   font-weight: 600;
@@ -108,12 +104,12 @@ h3 {
     font-size: 17px;
   }
   .profile {
-    padding-top: 5px;
+    /* padding-top: px; */
   }
   .container .para {
     font-size: 15px;
     height: auto;
-    line-height: 20px;
+    line-height: 17px;
   }
 
   #daniel,
