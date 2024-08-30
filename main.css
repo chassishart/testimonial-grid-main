@@ -87,7 +87,7 @@ h3 {
   color: var(--Very-dark-grayish-blue);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 430px) {
   .container {
     height: 95vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
