@@ -1,0 +1,151 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Semi Condensed";
+  font-size: 13px;
+  --moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+main {
+  background-color: var(--Light-grayish-blue);
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 50px 15px 50px 15px;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.name {
+  padding-top: 5px;
+}
+
+h3 {
+  padding: 15px 0px;
+  font-weight: 600;
+}
+
+#daniel {
+  background-color: var(--moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-position: 93% 0%;
+  background-repeat: no-repeat;
+  padding: 26px;
+  height: 270px;
+  border-radius: 5px;
+  color: var(--White);
+}
+
+#jonathan {
+  padding: 26px;
+  height: 160px;
+  border-radius: 5px;
+  background-color: var(--Very-dark-grayish-blue);
+  color: var(--White);
+}
+
+#harmon {
+  padding: 26px;
+  height: 160px;
+  border-radius: 5px;
+  background-color: var(--White);
+  color: var(--Very-dark-grayish-blue);
+}
+
+#patrick {
+  padding: 26px;
+  height: 260px;
+  border-radius: 5px;
+  background-color: var(--Very-dark-blackish-blue);
+  color: var(--White);
+}
+
+#kira {
+  padding: 26px;
+  height: 335px;
+  border-radius: 5px;
+  background-color: var(--White);
+  color: var(--Very-dark-grayish-blue);
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 10rem;
+  }
+
+  .container .profile {
+    align-items: center;
+  }
+
+  .container h3 {
+    font-size: 17px;
+  }
+  .profile {
+    padding-top: 5px;
+  }
+  .container .para {
+    font-size: 15px;
+    height: auto;
+    line-height: 21px;
+  }
+
+  #daniel,
+  #jonathan,
+  #kira,
+  #harmon,
+  #patrick {
+    padding: 12px 16px;
+    height: 90%;
+  }
+
+  #daniel {
+    line-height: 18px;
+    order: 0;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  #jonathan {
+    order: 0;
+    grid-row: 1 / span 1;
+  }
+  #kira {
+    order: 1;
+    grid-row: 1 / span 2;
+    height: 95%;
+  }
+  #harmon {
+    order: 2;
+    grid-column: 1 / span 1;
+  }
+  #patrick {
+    order: 2;
+    grid-column: 2 / span 2;
+  }
+}
